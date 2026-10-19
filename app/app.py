@@ -1,9 +1,20 @@
 import sys
 import os
+
+# Use legacy Keras (tf_keras) for TF 2.16+ compatibility with .h5 models
+os.environ["TF_USE_LEGACY_KERAS"] = "1"
+
 import numpy as np
 import streamlit as st
-import tensorflow as tf
 from PIL import Image
+
+try:
+    import tf_keras as keras
+except ImportError:
+    import tensorflow as tf
+    keras = tf.keras
+
+import tensorflow as tf
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 
@@ -733,7 +744,7 @@ def get_disease_info(class_name: str) -> dict:
 
 
 # ── Fix: FixedDropout is a custom layer from EfficientNet / older keras ───────
-class FixedDropout(tf.keras.layers.Dropout):
+class FixedDropout(keras.layers.Dropout):
     """EfficientNet's FixedDropout – identical to Dropout but noise shape is
     resolved against the *static* input shape, not the dynamic one."""
     def _get_noise_shape(self, inputs):
@@ -747,13 +758,12 @@ class FixedDropout(tf.keras.layers.Dropout):
 
 @st.cache_resource(show_spinner=False)
 def load_model_and_size():
-    """Load the model and return (model, (height, width)) derived from its
-    own input spec – so we never hard-code the wrong resolution again."""
+    """Load the model using tf_keras for TF 2.16+ compatibility with .h5 models."""
     if not os.path.exists(MODEL_PATH):
         st.error(f"❌ Model file not found at:\n`{MODEL_PATH}`")
         st.stop()
-    with tf.keras.utils.custom_object_scope({'FixedDropout': FixedDropout}):
-        model = tf.keras.models.load_model(MODEL_PATH)
+    with keras.utils.custom_object_scope({'FixedDropout': FixedDropout}):
+        model = keras.models.load_model(MODEL_PATH)
     _, h, w, _ = model.input_shape
     return model, (h, w)
 
