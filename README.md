@@ -14,6 +14,12 @@
 </div>
 
 ---
+## screenshoots
+<img width="1265" height="611" alt="Screenshot 2026-10-19 170912" src="https://github.com/user-attachments/assets/c25cff2b-0245-40c0-94d0-4bb5a1c7560c" />
+<img width="1266" height="555" alt="Screenshot 2026-10-19 170928" src="https://github.com/user-attachments/assets/b1ed557a-5abd-48e3-8112-982a19bad748" />
+<img width="1157" height="545" alt="Screenshot 2026-10-19 170940" src="https://github.com/user-attachments/assets/6b502bbb-9e33-4719-8b02-9e06ede40363" />
+<img width="897" height="546" alt="Screenshot 2026-10-19 170956" src="https://github.com/user-attachments/assets/c19a854f-787a-4121-b71c-daf7a786d75d" />
+<img width="1151" height="536" alt="Screenshot 2026-10-19 171017" src="https://github.com/user-attachments/assets/9ec6e156-c3b9-455c-a80a-48cee5b67871" />
 
 ## ✨ Features
 
