@@ -365,7 +365,7 @@ AgroVision-AI/
 <th>📋 Contributions</th>
 </tr>
 <tr>
-<td><b>Muhammad Saqib</b><br/><i>Team Lead & AI Engineer</i></td>
+<td><b>Saqib Azair</b><br/><i>Team Lead & AI Engineer</i></td>
 <td>ML / Backend</td>
 <td>
 • Designed & trained EfficientNet-B0 model<br/>
@@ -376,38 +376,13 @@ AgroVision-AI/
 </td>
 </tr>
 <tr>
-<td><b>Team Member 2</b><br/><i>Frontend Developer</i></td>
+<td><b>ShahBano</b><br/><i>Ducomentation</i></td>
 <td>UI / UX</td>
 <td>
-• Designed dark glassmorphism Streamlit UI<br/>
-• Created custom CSS animations & confidence meter<br/>
-• Built responsive layout for mobile & desktop<br/>
-• Implemented color-coded severity system
+• Built responsive layout for mobile & desktop& documents<br/>
 </td>
 </tr>
 <tr>
-<td><b>Team Member 3</b><br/><i>Data Engineer</i></td>
-<td>Data / Research</td>
-<td>
-• Curated & preprocessed PlantVillage dataset (~87K images)<br/>
-• Implemented data augmentation pipeline<br/>
-• Conducted EDA in Jupyter notebooks<br/>
-• Researched disease knowledge base (38 diseases)
-</td>
-</tr>
-<tr>
-<td><b>Team Member 4</b><br/><i>DevOps / Deployment</i></td>
-<td>Infrastructure</td>
-<td>
-• Set up Streamlit Cloud deployment<br/>
-• Configured <code>.streamlit/config.toml</code><br/>
-• Managed GitHub repository & CI/CD<br/>
-• Wrote documentation & README
-</td>
-</tr>
-</table>
-
-> **Note**: Update the team member names above with actual names before submission.
 
 ---
 
